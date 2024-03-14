@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    border-color: black;
 }
 body{
     margin: 0%;
@@ -18,19 +19,35 @@ main{
     display: flex;
     padding: 10px 0;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 main div{
-    flex-grow: 1;
-    background-color: orange;
+    width: 30%;
+    background-color: pink;
     height: 100%;
-}
-
-.dobro{
-    flex-grow: 2;
+    text-align: center;
+    font-size: large;
 }
 header{
-    background-color: blueviolet;
+    background-color: powderblue;
+    text-align: center;
 }
 footer{
-    background-color: brown     ;
+    background-color: powderblue;
+    text-align: center;
+}
+@media (max-width: 768px){
+    main{
+        height: auto
+    }
+    main div{
+        width: 45%;
+        height: 100vh;
+    }
+}
+@media (max-width: 576px){
+    main div{
+        width: 98%
+    }
 }
